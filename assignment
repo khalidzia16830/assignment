@@ -1,0 +1,57 @@
+# include <iostream>
+using namespace std;
+int main()
+{
+	// rock vs paper
+	//scissors vs rock
+	//paper vs scissors
+    // paper vs paper || rock vs rock || scissors vs scissors
+    
+     string player1, player2;
+
+	// PLAYER 1 Entry
+	cout << "Let's Play the Game\n\n\t Enter your name: ";
+	cin >> player1;
+	cout <<" PLAYER1 : "<<player1;
+	// PLAYER 2 Entry 		
+	cout << "\n\t Enter your name: ";
+	cin>> player2;
+	cout << "PLAYER2 : "<<player2;
+
+	cout << "\n\t\t\tGAME BEGINS!\n";
+
+	   cout << player1 << " move : ";
+	      cin >> player1;
+	   cout << player2<< " move : ";
+	      cin>>player2;
+	// case1:
+	if(player1=="rock" && player2=="paper")
+      	{
+		    cout << "Paper beats the rock by covering it \n\t\t "<<player2 <<" WIN'S THE GAME! ";
+		   }
+	// case2 :	    
+	if (player1=="paper" && player2=="paper")
+	   {
+	    	cout << "\n\tGAME IS TIE!\n\n\t\t none of them will win";
+		 }
+	// case3 :
+		 
+    if(player1=="rock" && player2=="scissor")
+    {
+           cout << "scissor crushed by rock \n\t\t "<<player1 <<" WIN'S THE GAME! ";
+	}
+	// case4 :
+	if(player1=="scissor" && player2=="paper")
+	{
+		   cout << "scissor cut paper\n\t\t "<<player1 <<" WIN'S THE GAME! ";
+	}
+	// case 5 : 
+	if(player1=="paper" && player2=="rock")
+  {
+		   cout << "Paper beats the rock by covering it \n\t\t "<<player1 <<" WIN'S THE GAME! ";
+	}
+	
+
+		
+	return 0;
+	}
